@@ -1,7 +1,4 @@
 
-最新资料下载地址:
-	http://www.openedv.com/thread-105197-1-1.html
-
 硬件资源：
 	1,MCU:NRF51822 (FLAH:256K, RAM:16K, 系统运行时钟频率:16MHz) 
 	2,无线通信引脚PIN19,PIN20 
@@ -37,14 +34,3 @@
 	
 
 
-
-
-					正点原子@ALIENTEK
-					2017-6-30
-					广州市星翼电子科技有限公司
-					电话：020-38271790
-					传真：020-36773971
-					购买：http://shop62103354.taobao.com
-					http://shop62057469.taobao.com
-					公司网站：www.alientek.com
-					技术论坛：www.openedv.com
