@@ -1,0 +1,145 @@
+Dependencies for Project 'nrf_firmware', Target 'nrf_firmware': (DO NOT MODIFY !)
+F (.\main.c)(0x59428078)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\nrf51_sdk\nrf51822\Include\gcc -I..\nrf51_sdk\nrf51822\Include -I..\HARDWARE\interface -I..\COMMUNICATE\interface-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I Device\Include-DNRF51 -DBLE_STACK_SUPPORT_REQD -DBLE="0" -DS110="1" -o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x52FDD27E)
+I (..\nrf51_sdk\nrf51822\Include\nrf.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf51.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\gcc\core_cm0.h)(0x57AAC978)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+I (..\nrf51_sdk\nrf51822\Include\gcc\core_cmInstr.h)(0x57AAC978)
+I (..\nrf51_sdk\nrf51822\Include\gcc\core_cmFunc.h)(0x57AAC978)
+I (..\nrf51_sdk\nrf51822\Include\system_nrf51.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf51_bitfields.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf51_deprecated.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\compiler_abstraction.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf_gpio.h)(0x57AAC974)
+I (..\HARDWARE\interface\led.h)(0x5912C1DC)
+I (..\HARDWARE\interface\pinout.h)(0x5912C106)
+I (..\HARDWARE\interface\button.h)(0x59265DDC)
+I (..\HARDWARE\interface\pm.h)(0x592662E2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x52FDD27E)
+I (..\HARDWARE\interface\systick.h)(0x592663AE)
+I (..\COMMUNICATE\interface\radiolink.h)(0x5934C394)
+I (..\HARDWARE\interface\atkp.h)(0x592E2A68)
+I (..\HARDWARE\interface\esb.h)(0x592661C8)
+I (..\COMMUNICATE\interface\uartlink.h)(0x59265B1A)
+I (..\HARDWARE\interface\config_param.h)(0x59E9CC3C)
+I (..\HARDWARE\interface\uart.h)(0x5926642C)
+F (.\system_nrf51.c)(0x57AAC95C)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\nrf51_sdk\nrf51822\Include\gcc -I..\nrf51_sdk\nrf51822\Include -I..\HARDWARE\interface -I..\COMMUNICATE\interface-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I Device\Include-DNRF51 -DBLE_STACK_SUPPORT_REQD -DBLE="0" -DS110="1" -o ..\obj\system_nrf51.o --omf_browse ..\obj\system_nrf51.crf --depend ..\obj\system_nrf51.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x52FDD27E)
+I (..\nrf51_sdk\nrf51822\Include\nrf.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf51.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\gcc\core_cm0.h)(0x57AAC978)
+I (..\nrf51_sdk\nrf51822\Include\gcc\core_cmInstr.h)(0x57AAC978)
+I (..\nrf51_sdk\nrf51822\Include\gcc\core_cmFunc.h)(0x57AAC978)
+I (..\nrf51_sdk\nrf51822\Include\system_nrf51.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf51_bitfields.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf51_deprecated.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\compiler_abstraction.h)(0x57AAC974)
+F (.\arm_startup_nrf51.s)(0x57AAC95C)(--cpu Cortex-M0 -g --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I Device\Include--list ..\obj\arm_startup_nrf51.lst --xref -o ..\obj\arm_startup_nrf51.o --depend ..\obj\arm_startup_nrf51.d)
+F (..\COMMUNICATE\src\radiolink.c)(0x594266BE)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\nrf51_sdk\nrf51822\Include\gcc -I..\nrf51_sdk\nrf51822\Include -I..\HARDWARE\interface -I..\COMMUNICATE\interface-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I Device\Include-DNRF51 -DBLE_STACK_SUPPORT_REQD -DBLE="0" -DS110="1" -o ..\obj\radiolink.o --omf_browse ..\obj\radiolink.crf --depend ..\obj\radiolink.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x52FDD27E)
+I (..\COMMUNICATE\interface\radiolink.h)(0x5934C394)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x52FDD27E)
+I (..\HARDWARE\interface\atkp.h)(0x592E2A68)
+I (..\HARDWARE\interface\esb.h)(0x592661C8)
+I (..\HARDWARE\interface\config_param.h)(0x59E9CC3C)
+F (..\COMMUNICATE\src\uartlink.c)(0x59265B1A)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\nrf51_sdk\nrf51822\Include\gcc -I..\nrf51_sdk\nrf51822\Include -I..\HARDWARE\interface -I..\COMMUNICATE\interface-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I Device\Include-DNRF51 -DBLE_STACK_SUPPORT_REQD -DBLE="0" -DS110="1" -o ..\obj\uartlink.o --omf_browse ..\obj\uartlink.crf --depend ..\obj\uartlink.d)
+I (..\COMMUNICATE\interface\uartlink.h)(0x59265B1A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x52FDD27E)
+I (..\HARDWARE\interface\atkp.h)(0x592E2A68)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+I (..\HARDWARE\interface\uart.h)(0x5926642C)
+F (..\HARDWARE\src\button.c)(0x5926658E)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\nrf51_sdk\nrf51822\Include\gcc -I..\nrf51_sdk\nrf51822\Include -I..\HARDWARE\interface -I..\COMMUNICATE\interface-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I Device\Include-DNRF51 -DBLE_STACK_SUPPORT_REQD -DBLE="0" -DS110="1" -o ..\obj\button.o --omf_browse ..\obj\button.crf --depend ..\obj\button.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x52FDD27E)
+I (..\nrf51_sdk\nrf51822\Include\nrf.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf51.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\gcc\core_cm0.h)(0x57AAC978)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+I (..\nrf51_sdk\nrf51822\Include\gcc\core_cmInstr.h)(0x57AAC978)
+I (..\nrf51_sdk\nrf51822\Include\gcc\core_cmFunc.h)(0x57AAC978)
+I (..\nrf51_sdk\nrf51822\Include\system_nrf51.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf51_bitfields.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf51_deprecated.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\compiler_abstraction.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf_gpio.h)(0x57AAC974)
+I (..\HARDWARE\interface\pinout.h)(0x5912C106)
+I (..\HARDWARE\interface\button.h)(0x59265DDC)
+I (..\HARDWARE\interface\systick.h)(0x592663AE)
+F (..\HARDWARE\src\config_param.c)(0x5934C644)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\nrf51_sdk\nrf51822\Include\gcc -I..\nrf51_sdk\nrf51822\Include -I..\HARDWARE\interface -I..\COMMUNICATE\interface-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I Device\Include-DNRF51 -DBLE_STACK_SUPPORT_REQD -DBLE="0" -DS110="1" -o ..\obj\config_param.o --omf_browse ..\obj\config_param.crf --depend ..\obj\config_param.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x52FDD27E)
+I (..\nrf51_sdk\nrf51822\Include\nrf.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf51.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\gcc\core_cm0.h)(0x57AAC978)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+I (..\nrf51_sdk\nrf51822\Include\gcc\core_cmInstr.h)(0x57AAC978)
+I (..\nrf51_sdk\nrf51822\Include\gcc\core_cmFunc.h)(0x57AAC978)
+I (..\nrf51_sdk\nrf51822\Include\system_nrf51.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf51_bitfields.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf51_deprecated.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\compiler_abstraction.h)(0x57AAC974)
+I (..\HARDWARE\interface\config_param.h)(0x59E9CC3C)
+I (..\HARDWARE\interface\esb.h)(0x592661C8)
+F (..\HARDWARE\src\esb.c)(0x594107A2)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\nrf51_sdk\nrf51822\Include\gcc -I..\nrf51_sdk\nrf51822\Include -I..\HARDWARE\interface -I..\COMMUNICATE\interface-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I Device\Include-DNRF51 -DBLE_STACK_SUPPORT_REQD -DBLE="0" -DS110="1" -o ..\obj\esb.o --omf_browse ..\obj\esb.crf --depend ..\obj\esb.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x52FDD27E)
+I (..\HARDWARE\interface\esb.h)(0x592661C8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x52FDD27E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+I (..\nrf51_sdk\nrf51822\Include\nrf.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf51.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\gcc\core_cm0.h)(0x57AAC978)
+I (..\nrf51_sdk\nrf51822\Include\gcc\core_cmInstr.h)(0x57AAC978)
+I (..\nrf51_sdk\nrf51822\Include\gcc\core_cmFunc.h)(0x57AAC978)
+I (..\nrf51_sdk\nrf51822\Include\system_nrf51.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf51_bitfields.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf51_deprecated.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\compiler_abstraction.h)(0x57AAC974)
+I (..\HARDWARE\interface\atkp.h)(0x592E2A68)
+I (..\COMMUNICATE\interface\radiolink.h)(0x5934C394)
+F (..\HARDWARE\src\pm.c)(0x5926633C)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\nrf51_sdk\nrf51822\Include\gcc -I..\nrf51_sdk\nrf51822\Include -I..\HARDWARE\interface -I..\COMMUNICATE\interface-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I Device\Include-DNRF51 -DBLE_STACK_SUPPORT_REQD -DBLE="0" -DS110="1" -o ..\obj\pm.o --omf_browse ..\obj\pm.crf --depend ..\obj\pm.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x52FDD27E)
+I (..\nrf51_sdk\nrf51822\Include\nrf.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf51.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\gcc\core_cm0.h)(0x57AAC978)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+I (..\nrf51_sdk\nrf51822\Include\gcc\core_cmInstr.h)(0x57AAC978)
+I (..\nrf51_sdk\nrf51822\Include\gcc\core_cmFunc.h)(0x57AAC978)
+I (..\nrf51_sdk\nrf51822\Include\system_nrf51.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf51_bitfields.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf51_deprecated.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\compiler_abstraction.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf_gpio.h)(0x57AAC974)
+I (..\HARDWARE\interface\pinout.h)(0x5912C106)
+I (..\HARDWARE\interface\pm.h)(0x592662E2)
+I (..\HARDWARE\interface\led.h)(0x5912C1DC)
+I (..\HARDWARE\interface\systick.h)(0x592663AE)
+I (..\HARDWARE\interface\uart.h)(0x5926642C)
+F (..\HARDWARE\src\systick.c)(0x5942671A)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\nrf51_sdk\nrf51822\Include\gcc -I..\nrf51_sdk\nrf51822\Include -I..\HARDWARE\interface -I..\COMMUNICATE\interface-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I Device\Include-DNRF51 -DBLE_STACK_SUPPORT_REQD -DBLE="0" -DS110="1" -o ..\obj\systick.o --omf_browse ..\obj\systick.crf --depend ..\obj\systick.d)
+I (..\nrf51_sdk\nrf51822\Include\nrf.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf51.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\gcc\core_cm0.h)(0x57AAC978)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+I (..\nrf51_sdk\nrf51822\Include\gcc\core_cmInstr.h)(0x57AAC978)
+I (..\nrf51_sdk\nrf51822\Include\gcc\core_cmFunc.h)(0x57AAC978)
+I (..\nrf51_sdk\nrf51822\Include\system_nrf51.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf51_bitfields.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf51_deprecated.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\compiler_abstraction.h)(0x57AAC974)
+I (..\HARDWARE\interface\systick.h)(0x592663AE)
+F (..\HARDWARE\src\uart.c)(0x592664C2)(--c99 -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I..\nrf51_sdk\nrf51822\Include\gcc -I..\nrf51_sdk\nrf51822\Include -I..\HARDWARE\interface -I..\COMMUNICATE\interface-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\PACK\ARM\CMSIS\3.20.4\CMSIS\Include-I Device\Include-DNRF51 -DBLE_STACK_SUPPORT_REQD -DBLE="0" -DS110="1" -o ..\obj\uart.o --omf_browse ..\obj\uart.crf --depend ..\obj\uart.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x52FDD27E)
+I (..\nrf51_sdk\nrf51822\Include\nrf.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf51.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\gcc\core_cm0.h)(0x57AAC978)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x52FDD27E)
+I (..\nrf51_sdk\nrf51822\Include\gcc\core_cmInstr.h)(0x57AAC978)
+I (..\nrf51_sdk\nrf51822\Include\gcc\core_cmFunc.h)(0x57AAC978)
+I (..\nrf51_sdk\nrf51822\Include\system_nrf51.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf51_bitfields.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf51_deprecated.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\compiler_abstraction.h)(0x57AAC974)
+I (..\nrf51_sdk\nrf51822\Include\nrf_gpio.h)(0x57AAC974)
+I (..\HARDWARE\interface\pinout.h)(0x5912C106)
+I (..\HARDWARE\interface\uart.h)(0x5926642C)
+F (..\README.txt)(0x59E9CB12)()
