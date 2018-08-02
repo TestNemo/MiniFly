@@ -46,6 +46,8 @@
 
 #include "led.h"
 #include "oled.h"
+#include "beep.h"
+#include "joystick.h"
 
 ALIGN(RT_ALIGN_SIZE)
 static char thread_radiolink_stack[512];
@@ -154,7 +156,7 @@ int rt_application_init(void)
 //	ledInit();			/*led初始化*/ ok, with rt_hw_led_init
 	  rt_hw_led_init();
   	oledInit(); 		/*oled初始化*/
-//	beepInit();			/*蜂鸣器初始化*/
+   	beepInit();			/*蜂鸣器初始化*/
 //	keyInit();			/*按键初始化*/ // done in keytask entry
   	joystickInit();		/*摇杆初始化*/
 //	usb_vcp_init();		/*usb虚拟串口初始化*/
