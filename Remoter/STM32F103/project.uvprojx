@@ -451,6 +451,11 @@
               <FileType>1</FileType>
               <FilePath>.\drivers\oled.c</FilePath>
             </File>
+            <File>
+              <FileName>adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\drivers\adc.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -960,6 +965,11 @@
               <FileName>usblink.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Framework\src\usblink.c</FilePath>
+            </File>
+            <File>
+              <FileName>joystick.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Framework\src\joystick.c</FilePath>
             </File>
           </Files>
         </Group>

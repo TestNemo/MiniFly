@@ -9,8 +9,25 @@
  * 2018-08-02     xinping yang      the first version
  */
 
-#ifndef __KEY_TASK_LINK_H
-#define __KEY_TASK_LINK_H
+#ifndef __KEY_TASK_H__
+#define __KEY_TASK_H__
+
+#include "system.h"
+
+#define KEY_L  		GPIO_Pin_11
+#define KEY_R  		GPIO_Pin_15
+#define KEY_S1   	GPIO_Pin_10
+#define KEY_S2   	GPIO_Pin_8
+
+#define READ_KEY_L()  	GPIO_ReadInputDataBit(GPIOB,KEY_L)	
+#define READ_KEY_R() 	GPIO_ReadInputDataBit(GPIOC,KEY_R)	
+#define READ_KEY_J1()  	GPIO_ReadInputDataBit(GPIOB,KEY_S1)	
+#define READ_KEY_J2()  	GPIO_ReadInputDataBit(GPIOA,KEY_S2)	
+
+
+void keyInit(void);
+	
+void KEY_Scan(void);
 
 void keyTask(void* parameter);
 #endif

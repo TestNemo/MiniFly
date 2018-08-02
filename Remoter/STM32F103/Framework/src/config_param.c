@@ -33,21 +33,21 @@ static configParam_t configParamDefault=
 	.flight.speed = FLIGHT_SPEED,
 	.flight.flip = FLIP_SET,
 	
-//	.jsParam.pitch.mid = 2000,
-//	.jsParam.pitch.range_neg = 2000,
-//	.jsParam.pitch.range_pos = 2000,
-//	
-//	.jsParam.roll.mid = 2000,
-//	.jsParam.roll.range_neg = 2000,
-//	.jsParam.roll.range_pos =2000,
-//	
-//	.jsParam.yaw.mid = 2000,
-//	.jsParam.yaw.range_neg = 2000,
-//	.jsParam.yaw.range_pos =2000,
-//	
-//	.jsParam.thrust.mid = 2000,
-//	.jsParam.thrust.range_neg = 2000,
-//	.jsParam.thrust.range_pos =2000,
+	.jsParam.pitch.mid = 2000,
+	.jsParam.pitch.range_neg = 2000,
+	.jsParam.pitch.range_pos = 2000,
+	
+	.jsParam.roll.mid = 2000,
+	.jsParam.roll.range_neg = 2000,
+	.jsParam.roll.range_pos =2000,
+	
+	.jsParam.yaw.mid = 2000,
+	.jsParam.yaw.range_neg = 2000,
+	.jsParam.yaw.range_pos =2000,
+	
+	.jsParam.thrust.mid = 2000,
+	.jsParam.thrust.range_neg = 2000,
+	.jsParam.thrust.range_pos =2000,
 	
 	.trim.pitch = 0.0,
     .trim.roll = 0.0,

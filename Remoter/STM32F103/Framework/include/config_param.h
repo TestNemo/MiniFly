@@ -14,6 +14,7 @@
 
 #include "system.h"
 #include "24l01.h"
+#include "joystick.h"
 
 #define BOOTLOADER_SIZE		(9*1024)		/*9K bootloader*/
 #define CONFIG_PARAM_SIZE	(127*1024)		
@@ -96,7 +97,7 @@ typedef struct{
 	enum language language;	
 	radioConfig_t radio;	
 	flightConfig_t flight;	
-	//joystickParam_t jsParam;  // ToDo
+	joystickParam_t jsParam; 
 	trim_t trim;			
 	u8 cksum;				
 } configParam_t;
