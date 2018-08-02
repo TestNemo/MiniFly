@@ -337,7 +337,7 @@
               <MiscControls></MiscControls>
               <Define>RT_USING_ARM_LIBC, USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>applications;.;drivers;Libraries\STM32F10x_StdPeriph_Driver\inc;Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x;rt-thread\components\CMSIS\Include;rt-thread\include;rt-thread\libcpu\arm\cortex-m3;rt-thread\libcpu\arm\common;rt-thread\components\dfs\include;rt-thread\components\dfs\filesystems\devfs;rt-thread\components\dfs\filesystems\elmfat;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\finsh;rt-thread\components\libc\compilers\armlibc;.\Framework\include;.\System</IncludePath>
+              <IncludePath>applications;.;drivers;Libraries\STM32F10x_StdPeriph_Driver\inc;Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x;rt-thread\components\CMSIS\Include;rt-thread\include;rt-thread\libcpu\arm\cortex-m3;rt-thread\libcpu\arm\common;rt-thread\components\dfs\include;rt-thread\components\dfs\filesystems\devfs;rt-thread\components\dfs\filesystems\elmfat;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\finsh;rt-thread\components\libc\compilers\armlibc;.\Framework\include;.\System;.\3pp</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -445,6 +445,11 @@
               <FileName>stmflash.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\drivers\stmflash.c</FilePath>
+            </File>
+            <File>
+              <FileName>oled.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\drivers\oled.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -965,6 +970,16 @@
               <FileName>system.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\System\system.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>3pp</GroupName>
+          <Files>
+            <File>
+              <FileName>font.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\3pp\font.c</FilePath>
             </File>
           </Files>
         </Group>

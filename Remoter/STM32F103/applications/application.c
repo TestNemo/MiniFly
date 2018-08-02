@@ -45,6 +45,7 @@
 #endif
 
 #include "led.h"
+#include "oled.h"
 
 ALIGN(RT_ALIGN_SIZE)
 static char thread_radiolink_stack[512];
@@ -152,7 +153,7 @@ int rt_application_init(void)
   	configParamInit();	/*配置参数初始化*/ 
 //	ledInit();			/*led初始化*/ ok, with rt_hw_led_init
 	  rt_hw_led_init();
-//	oledInit(); 		/*oled初始化*/
+  	oledInit(); 		/*oled初始化*/
 //	beepInit();			/*蜂鸣器初始化*/
 //	keyInit();			/*按键初始化*/
 //	joystickInit();		/*摇杆初始化*/

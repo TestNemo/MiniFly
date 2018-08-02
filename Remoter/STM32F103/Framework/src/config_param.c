@@ -103,5 +103,6 @@ void configParamInit(void)
 }
 void configParamTask(void* parameter)
 {
+	//configParamInit();
 	rt_kprintf("config param task entry\n");
 }
