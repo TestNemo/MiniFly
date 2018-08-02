@@ -1,69 +1,35 @@
-	
-硬件资源：
-	1,MCU:STM32F103C8T6 (FLAH:64K, RAM:20K, 系统运行时钟频率:72MHz) 
-	2,无线通信NRF24L01+(CE:PA3, CSN:PA4, SCK:PA5, MISO:PA5, MOSI:PA6, IRQ:PC13) 
-	3,油门摇杆（ADC_YAW:PB0, ADC_THRUST: PB1）
-	4,方向摇杆（ADC_ROLL:PA1, ADC_PITCH: PA2）
-	5,OLED(MOSI:PB15, RST:PB14, CLK:PB13, DC:PB12)
-	6,按键(KEY_J1：PB10, KEY_J2：PA8, KEY_L:PB11, KEY_R:PC15)
-	7,通信指示灯(RED_LED0:PB7, BLUE_LED1:PB3)
-	8,蜂鸣器（PC14）
+-- cn --
+按需要生成工程文件:
+1. 修改当前文件夹内 rtconfig.py :
+CROSS_TOOL='keil'           #使用的工具链.
+STM32_TYPE = 'STM32F10X_HD' #STM32对应的型号.
+EXEC_PATH 	= 'C:/Keil' #Keil安装路径.
+IAR_PATH 	= 'C:/Program Files/IAR Systems/Embedded Workbench 6.0 Evaluation' #IAR安装路径.
+2. 修改当前文件夹内 rtconfig.h 配置需要的功能.
+3. MDK：在当前文件夹内执行 scons --target=mdk  或 scons --target=mdk4 生成MDK 4工程文件 project.uvproj
+        或在当前文件夹内执行 scons --target=mdk5 生成MDK 5工程文件 project.uvprojx
+   IAR：在当前文件夹内执行 scons --target=iar 生成IAR工程 project.eww.
+4. 将bsp\stm32f10x\drivers内board.h中STM32_SRAM_SIZE的值修改为与芯片SRAM大小一致.
 
-实验现象：
-	遥控器开机后显示主界面，蜂鸣器“滴”一声后四轴可飞行。
-	
-	灯语：
-	    RED_LED0亮：与四轴通信失败
-	    BLUE_LED1亮：与四轴通信成功
+note: 需要安装 python 2.7,scons.
+      更多介绍请参考http://www.rt-thread.org/book/13.html
+                  和http://www.rt-thread.org/dokuwiki/doku.php?id=%E9%85%8D%E7%BD%AErt-thread%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83
 
-注意事项:
-	代码下载和调试前，请将下载器开关拨到STM32档。
-	bootloader起始地址（BOOTLOADER_START_ADDR） : 0x8000000
-	固件起始地址（FIRMWARE_START_ADDR） : 0x8002400
+-- en --
+Generate project files as needed:
+1. Modify the files in the current folder:
+CROSS_TOOL='keil'           #The tool chain in use.
+STM32_TYPE = 'STM32F10X_HD' #The type of stm32.
+EXEC_PATH 	= 'C:/Keil' #The installation path of the Keil.
+IAR_PATH 	= 'C:/Program Files/IAR Systems/Embedded Workbench 6.0 Evaluation' #The installation path of the IAR.
+2. Configure the required functionality by modifying rtconfig.h in the current folder.
+3. MDK:Execute the scons --target=mdk or scons --target=mdk4 in the current folder to generate the MDK4 project project.uvproj.
+       Or execute the scons --target=mdk5 in the current folder to generate the MDK5 project project.uvprojx.
+   IAR:Execute the scons --target=iar in the current folder to generate the IAR project project.eww.
+4. Change the value of STM32_SRAM_SIZE in board.h(bsp\stm32f10x\drivers) to match the chip SRAM size.
 
-固件更新记录:
-	V1.0 Release(硬件版本:V1.6, DATE:2017-06-30)
-		
-	V1.1 Release(硬件版本:V1.6, DATE:2017-10-18)
-		1.修改config_param.h将配置参数保存起始地址由第63更改至127K
-		2.GUI_APP增加menuL3_item.c，增加扩展模块的菜单项
-	
-	V1.2 Release(硬件版本:V1.7, DATE:2018-06-22)
-		1.控制模式增加定点模式(需配合光流模块),此模式下，通过光电定点，激光(2m以内)定高的方式实现四轴稳定悬停，
-			如果挂载光流模块，此模式作用相同于定高模式.注意：此模式关闭空翻功能.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+note:Need to install python 2.7 and scons.
+     For more information, please refer to the website http://www.rt-thread.org/book/13.html
+                                               and     http://www.rt-thread.org/dokuwiki/doku.php?id=%E9%85%8D%E7%BD%AErt-thread%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83
 
 
