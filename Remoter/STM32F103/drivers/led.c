@@ -26,30 +26,39 @@
 
 #else
 
-#define led1_rcc                    RCC_APB2Periph_GPIOE
-#define led1_gpio                   GPIOE
-#define led1_pin                    (GPIO_Pin_2)
+#define led1_rcc                    RCC_APB2Periph_GPIOB
+#define led1_gpio                   GPIOB
+#define led1_pin                    (GPIO_Pin_3)
 
-#define led2_rcc                    RCC_APB2Periph_GPIOE
-#define led2_gpio                   GPIOE
-#define led2_pin                    (GPIO_Pin_3)
+#define led2_rcc                    RCC_APB2Periph_GPIOB
+#define led2_gpio                   GPIOB
+#define led2_pin                    (GPIO_Pin_7)
 
 #endif // led define #ifdef STM32_SIMULATOR
 
 void rt_hw_led_init(void)
 {
     GPIO_InitTypeDef GPIO_InitStructure;
-
+    // disable JTA enable SWD interface
+	  RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
+	  GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable,ENABLE);
+	
     RCC_APB2PeriphClockCmd(led1_rcc|led2_rcc,ENABLE);
 
     GPIO_InitStructure.GPIO_Mode  = GPIO_Mode_Out_PP;
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 
+	   // init LED_BLUE
     GPIO_InitStructure.GPIO_Pin   = led1_pin;
     GPIO_Init(led1_gpio, &GPIO_InitStructure);
-
+     
+	  // init LED_RED
     GPIO_InitStructure.GPIO_Pin   = led2_pin;
     GPIO_Init(led2_gpio, &GPIO_InitStructure);
+	  // disable all LEDs
+	  GPIO_SetBits(GPIOB,led1_pin);			
+	  GPIO_SetBits(GPIOB,led2_pin);
+	  
 }
 
 void rt_hw_led_on(rt_uint32_t n)

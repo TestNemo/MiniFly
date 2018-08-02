@@ -148,9 +148,10 @@ int rt_application_init(void)
 //  ---------below comments is the hardware init ---------------------	
 //	  NVIC_SetVectorTable(FIRMWARE_START_ADDR,0);
 //	  NVIC_PriorityGroupConfig(NVIC_PriorityGroup_4);/*中断配置初始化*/
-//	delay_init(); 		/*delay初始化*/
-//	configParamInit();	/*配置参数初始化*/
-//	ledInit();			/*led初始化*/
+//	delay_init(); 		/*delay初始化*/  no need, with rt_thread_delay to replace
+  	configParamInit();	/*配置参数初始化*/ 
+//	ledInit();			/*led初始化*/ ok, with rt_hw_led_init
+	  rt_hw_led_init();
 //	oledInit(); 		/*oled初始化*/
 //	beepInit();			/*蜂鸣器初始化*/
 //	keyInit();			/*按键初始化*/
