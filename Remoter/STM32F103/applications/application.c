@@ -154,12 +154,12 @@ int rt_application_init(void)
 //	delay_init(); 		/*delay初始化*/  no need, with rt_thread_delay to replace
   	configParamInit();	/*配置参数初始化*/ 
 //	ledInit();			/*led初始化*/ ok, with rt_hw_led_init
-	  rt_hw_led_init();
+	rt_hw_led_init();
   	oledInit(); 		/*oled初始化*/
    	beepInit();			/*蜂鸣器初始化*/
 //	keyInit();			/*按键初始化*/ // done in keytask entry
   	joystickInit();		/*摇杆初始化*/
-//	usb_vcp_init();		/*usb虚拟串口初始化*/
+	usb_vcp_init();		/*usb虚拟串口初始化*/
 //	
 //	radiolinkInit();	/*无线通信初始化*/
 //	usblinkInit();		/*usb通信初始化*/

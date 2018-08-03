@@ -1,6 +1,7 @@
 #ifndef __SYSTEM_H
 #define __SYSTEM_H	
 #include "stm32f10x.h"
+#include <rtthread.h>
 //////////////////////////////////////////////////////////////////////////////////	 
 //本程序只供学习使用，未经作者许可，不得用于其它任何用途
 //ALIENTEK STM32开发板		   
@@ -69,5 +70,6 @@ void WFI_SET(void);		//执行WFI指令
 void INTX_DISABLE(void);//关闭所有中断
 void INTX_ENABLE(void);	//开启所有中断
 void MSR_MSP(u32 addr);	//设置堆栈地址
+void delay_ms(rt_uint32_t ms);
 
 #endif

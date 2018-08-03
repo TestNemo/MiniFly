@@ -1,5 +1,4 @@
 #include "system.h"
-
 //////////////////////////////////////////////////////////////////////////////////	 
 //本程序只供学习使用，未经作者许可，不得用于其它任何用途
 //ALIENTEK  STM32开发板
@@ -35,3 +34,15 @@ void INTX_ENABLE(void)
 //    MSR MSP, r0 			//set Main Stack value
 //    BX r14
 //}
+
+void delay_ms(rt_uint32_t ms)
+{
+  if (ms < 1000 / RT_TICK_PER_SECOND)
+  {
+	   rt_thread_delay(1);
+	}
+	else 
+  {
+	  rt_thread_delay(rt_tick_from_millisecond(ms));
+	}
+}
