@@ -981,6 +981,11 @@
               <FileType>1</FileType>
               <FilePath>.\System\system.c</FilePath>
             </File>
+            <File>
+              <FileName>debug_assert.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\System\debug_assert.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

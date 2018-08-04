@@ -13,29 +13,13 @@
  */
 #include <rtthread.h>
 #include <stm32f10x.h>
+#include "led.h"
 
-// led define
-#ifdef STM32_SIMULATOR
-#define led1_rcc                    RCC_APB2Periph_GPIOA
-#define led1_gpio                   GPIOA
-#define led1_pin                    (GPIO_Pin_5)
 
-#define led2_rcc                    RCC_APB2Periph_GPIOA
-#define led2_gpio                   GPIOA
-#define led2_pin                    (GPIO_Pin_6)
-
-#else
-
-#define led1_rcc                    RCC_APB2Periph_GPIOB
-#define led1_gpio                   GPIOB
-#define led1_pin                    (GPIO_Pin_3)
-
-#define led2_rcc                    RCC_APB2Periph_GPIOB
-#define led2_gpio                   GPIOB
-#define led2_pin                    (GPIO_Pin_7)
-
-#endif // led define #ifdef STM32_SIMULATOR
-
+void ledInit(void)
+{
+  rt_hw_led_init();
+}
 void rt_hw_led_init(void)
 {
     GPIO_InitTypeDef GPIO_InitStructure;
