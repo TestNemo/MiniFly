@@ -105,6 +105,28 @@ void configParamTask(void* parameter)
 {
 	//configParamInit();
 	rt_kprintf("config param task entry\n");
+	u8 cksum = 0;
+	static u8 count = 0;
+	while(1) 
+	{	
+//		vTaskDelay(1000);
+		rt_thread_delay(1000);
+		cksum = calculate_cksum(&configParam);
+		if(configParam.cksum != cksum)	
+		{
+			configParam.cksum = cksum;
+			count = 1;
+		}
+		if(count)
+		{
+			count ++;
+		}
+		if(count > 6)
+		{
+			count = 0;
+			STMFLASH_Write(CONFIG_PARAM_ADDR,(u16*)&configParam,sizeof(configParam)/2);
+		}
+	}
 }
 
 void configParamReset(void)
