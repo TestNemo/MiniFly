@@ -337,7 +337,7 @@
               <MiscControls></MiscControls>
               <Define>RT_USING_ARM_LIBC, USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>applications;.;drivers;Libraries\STM32F10x_StdPeriph_Driver\inc;Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x;rt-thread\components\CMSIS\Include;rt-thread\include;rt-thread\libcpu\arm\cortex-m3;rt-thread\libcpu\arm\common;rt-thread\components\dfs\include;rt-thread\components\dfs\filesystems\devfs;rt-thread\components\dfs\filesystems\elmfat;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\finsh;rt-thread\components\libc\compilers\armlibc;.\Framework\include;.\System;.\3pp;.\USB\CONFIG;.\USB\STM32_USB-FS-Device_Driver\inc</IncludePath>
+              <IncludePath>applications;.;drivers;Libraries\STM32F10x_StdPeriph_Driver\inc;Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x;rt-thread\components\CMSIS\Include;rt-thread\include;rt-thread\libcpu\arm\cortex-m3;rt-thread\libcpu\arm\common;rt-thread\components\dfs\include;rt-thread\components\dfs\filesystems\devfs;rt-thread\components\dfs\filesystems\elmfat;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\drivers\include;rt-thread\components\finsh;rt-thread\components\libc\compilers\armlibc;.\Framework\include;.\System;.\3pp;.\USB\CONFIG;.\USB\STM32_USB-FS-Device_Driver\inc;.\GUI\APP\interface;.\GUI\DRV\interface</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -1060,6 +1060,101 @@
               <FileName>usb_sil.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\USB\STM32_USB-FS-Device_Driver\src\usb_sil.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>gui</GroupName>
+          <Files>
+            <File>
+              <FileName>debug_ui.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\GUI\APP\src\debug_ui.c</FilePath>
+            </File>
+            <File>
+              <FileName>joystickCalib_ui.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\GUI\APP\src\joystickCalib_ui.c</FilePath>
+            </File>
+            <File>
+              <FileName>main_ui.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\GUI\APP\src\main_ui.c</FilePath>
+            </File>
+            <File>
+              <FileName>match_ui.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\GUI\APP\src\match_ui.c</FilePath>
+            </File>
+            <File>
+              <FileName>menu_ui.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\GUI\APP\src\menu_ui.c</FilePath>
+            </File>
+            <File>
+              <FileName>menuL1_item.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\GUI\APP\src\menuL1_item.c</FilePath>
+            </File>
+            <File>
+              <FileName>menuL2_item.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\GUI\APP\src\menuL2_item.c</FilePath>
+            </File>
+            <File>
+              <FileName>menuL3_item.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\GUI\APP\src\menuL3_item.c</FilePath>
+            </File>
+            <File>
+              <FileName>reset_ui.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\GUI\APP\src\reset_ui.c</FilePath>
+            </File>
+            <File>
+              <FileName>trim_ui.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\GUI\APP\src\trim_ui.c</FilePath>
+            </File>
+            <File>
+              <FileName>button.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\GUI\DRV\src\button.c</FilePath>
+            </File>
+            <File>
+              <FileName>gui_basic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\GUI\DRV\src\gui_basic.c</FilePath>
+            </File>
+            <File>
+              <FileName>gui_menu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\GUI\DRV\src\gui_menu.c</FilePath>
+            </File>
+            <File>
+              <FileName>lcmdrv.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\GUI\DRV\src\lcmdrv.c</FilePath>
+            </File>
+            <File>
+              <FileName>messagebox.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\GUI\DRV\src\messagebox.c</FilePath>
+            </File>
+            <File>
+              <FileName>scrollbar.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\GUI\DRV\src\scrollbar.c</FilePath>
+            </File>
+            <File>
+              <FileName>text.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\GUI\DRV\src\text.c</FilePath>
+            </File>
+            <File>
+              <FileName>windows.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\GUI\DRV\src\windows.c</FilePath>
             </File>
           </Files>
         </Group>

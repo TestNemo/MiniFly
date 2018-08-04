@@ -106,3 +106,12 @@ void configParamTask(void* parameter)
 	//configParamInit();
 	rt_kprintf("config param task entry\n");
 }
+
+void configParamReset(void)
+{
+	joystickParam_t jsParam;
+	jsParam = configParam.jsParam;
+	configParam = configParamDefault;
+	configParam.jsParam = jsParam;
+	writeConfigParamToFlash();
+}

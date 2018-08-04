@@ -164,7 +164,7 @@ int rt_application_init(void)
 //	
   	radiolinkInit();	/*无线通信初始化*/
   	usblinkInit();		/*usb通信初始化*/
-//	displayInit();		/*显示初始化*/
+  	displayInit();		/*显示初始化*/
 
 #if (RT_THREAD_PRIORITY_MAX == 32)
     init_thread = rt_thread_create("init",

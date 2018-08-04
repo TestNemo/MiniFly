@@ -11,6 +11,10 @@
 
 #include "atkp.h"
 #include <rtthread.h>
+float plane_yaw,plane_roll,plane_pitch;
+float plane_bat;
+u8 rssi;
+
 
 void radiolinkDataProcessTask(void* parameter)
 {

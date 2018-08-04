@@ -24,11 +24,24 @@
 #define READ_KEY_J1()  	GPIO_ReadInputDataBit(GPIOB,KEY_S1)	
 #define READ_KEY_J2()  	GPIO_ReadInputDataBit(GPIOA,KEY_S2)	
 
+//Key Status
+#define KEY_L_SHORT_PRESS  	1	
+#define KEY_L_LONG_PRESS	  2
+#define KEY_R_SHORT_PRESS  	3	
+#define KEY_R_LONG_PRESS	  4	
+#define KEY_J1_SHORT_PRESS	5	
+#define KEY_J1_LONG_PRESS	  6
+#define KEY_J2_SHORT_PRESS	7
+#define KEY_J2_LONG_PRESS  	8
+
+
+
 
 void keyInit(void);
 	
 void KEY_Scan(void);
 
 void keyTask(void* parameter);
+u8 getKeyState(void);
 #endif
 
