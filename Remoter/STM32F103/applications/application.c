@@ -213,7 +213,7 @@ int rt_application_init(void)
         rt_thread_startup(&thread_commander_handle);
 		
 	  res = rt_thread_init(&thread_key_handle,
-						   "COMMANDER",
+						   "KEYTASK",
 						   keyTask,
 						   RT_NULL,
 						   &thread_key_stack[0],
@@ -231,7 +231,7 @@ int rt_application_init(void)
         rt_thread_startup(&thread_display_handle);
 
 		res = rt_thread_init(&thread_configParam_handle,
-						   "DISPLAY",
+						   "CONFIGPARAM",
 						   configParamTask,
 						   RT_NULL,
 						   &thread_configParam_stack[0],
@@ -240,7 +240,7 @@ int rt_application_init(void)
         rt_thread_startup(&thread_configParam_handle);
 		
 		res = rt_thread_init(&thread_radiolinkDataProcess_handle,
-						   "DISPLAY",
+						   "RADIOLINK DATA Process",
 						   radiolinkDataProcessTask,
 						   RT_NULL,
 						   &thread_radiolinkDataProcess_stack[0],
@@ -249,7 +249,7 @@ int rt_application_init(void)
         rt_thread_startup(&thread_radiolinkDataProcess_handle);
 		
 		res = rt_thread_init(&thread_usblinkDataProcess_handle,
-						   "DISPLAY",
+						   "USBLINK DATA Process",
 						   usblinkDataProcessTask,
 						   RT_NULL,
 						   &thread_usblinkDataProcess_stack[0],
